@@ -4,6 +4,11 @@ namespace UnityTemplateProjects
 {
     public class SimpleCameraController : MonoBehaviour
     {
+        public GameObject leftHand;
+        public GameObject rightHand;
+
+        public bool debugMode;
+
         class CameraState
         {
             public float yaw;
@@ -50,6 +55,32 @@ namespace UnityTemplateProjects
             }
         }
         
+
+        /// Awake is called when the script instance is being loaded.
+        void Awake()
+        {
+            if (!debugMode)
+            {
+                this.enabled = false;
+            }
+        }
+
+        /// Start is called on the frame when a script is enabled just before
+        /// any of the Update methods is called the first time.
+        void Start()
+        {
+            if (debugMode)
+            {
+                leftHand.transform.position = this.transform.position + new Vector3(-0.5f, 0.0f, 0.0f);
+                rightHand.transform.position = this.transform.position + new Vector3(0.5f, 0.0f, 0.0f);
+
+                leftHand.transform.parent = this.gameObject.transform;
+                rightHand.transform.parent = this.gameObject.transform;
+
+                ///TODO: Figure out when this gets reset by SteamVR causes this to be reset
+                this.gameObject.transform.position = new Vector3(0.0f, 1.6f, 0.0f);
+            }
+        }
         CameraState m_TargetCameraState = new CameraState();
         CameraState m_InterpolatingCameraState = new CameraState();
 
