@@ -11,34 +11,42 @@ public class BasicGunScript : MonoBehaviour
     public SteamVR_Action_Boolean menu;
     public SteamVR_Action_Boolean grip;
 
+    //Audio
     public AudioClip fireSound;
     public AudioClip emptySound;
     public AudioClip reloadSound;
 
+    //Timers
     public float reloadTime;
     public float shotDelay;
-
-    public float forceMultipleier;
-
-    private bool triggerActive;
-
     private float reloadTimer;
     private float shotTimer;
 
-    private bool goopShooterActive;
-
+    //Ammo
     public int maxAmmo;
     private int currentAmmo;
+
+    //Force
+    public float bulletForceMultipleier;
+
+    //Debug boolean
+    public bool debugMode;
+
+    //Interal boolean for checking wether the tigger has been activated
+    //May be redudent
+    private bool triggerActive;
+    
+    //Boolean for alternative firing mode
+    private bool cubeFiringMode;
 
     // Start is called before the first frame update
     void Start()
     {
-        if (trigger == null)
-            this.enabled = false;
         triggerActive = false;
 
         currentAmmo = maxAmmo;
 
+        //Initalise timers
         shotTimer = 0.0f;
         reloadTimer = 0.0f;
     }
@@ -53,13 +61,13 @@ public class BasicGunScript : MonoBehaviour
     {
         reloadTimer -= Time.deltaTime;
         shotTimer -= Time.deltaTime;
-        if (GetGrip() || Input.GetKeyDown("r"))
+        if (GetGrip() || (Input.GetKeyDown("r")  && debugMode))
         {
             //Debug.Log("Grab " + handType);
             Reload();
         }
 
-        if (GetTrigger() || Input.GetMouseButtonDown(0))
+        if (GetTrigger() || (Input.GetMouseButtonDown(0) && debugMode))
         {
             //Debug.Log("Trigger" + handType);
             triggerActive = true;
@@ -69,7 +77,7 @@ public class BasicGunScript : MonoBehaviour
         if (GetMenu())
         {
             Debug.Log("Menu" + handType);
-            goopShooterActive = !goopShooterActive;
+            cubeFiringMode = !cubeFiringMode;
         }
 
         if (triggerActive && shotTimer < 0.0f)
@@ -96,13 +104,13 @@ public class BasicGunScript : MonoBehaviour
     {
         if (!(currentAmmo == 0) && reloadTimer < 0.0f)
         {
-            if (!goopShooterActive)
+            if (!cubeFiringMode)
             {
                 GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
                 sphere.transform.position = transform.position;
                 sphere.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
                 sphere.AddComponent<Rigidbody>();
-                sphere.GetComponent<Rigidbody>().AddForce(this.gameObject.transform.forward * forceMultipleier, ForceMode.Force);
+                sphere.GetComponent<Rigidbody>().AddForce(this.gameObject.transform.forward * bulletForceMultipleier, ForceMode.Force);
                 sphere.AddComponent<BulletScript>();
                 GetComponent<AudioSource>().PlayOneShot(fireSound);
                 currentAmmo--;
@@ -114,7 +122,7 @@ public class BasicGunScript : MonoBehaviour
                 cube.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
                 cube.GetComponent<MeshRenderer>().material.SetColor("_Color", new Color(0.0f, 0.5f, 1.0f));
                 cube.AddComponent<Rigidbody>();
-                cube.GetComponent<Rigidbody>().AddForce(this.gameObject.transform.forward * forceMultipleier, ForceMode.Force);
+                cube.GetComponent<Rigidbody>().AddForce(this.gameObject.transform.forward * bulletForceMultipleier, ForceMode.Force);
                 cube.AddComponent<BulletScript>();
                 GetComponent<AudioSource>().PlayOneShot(fireSound);
                 currentAmmo--;
@@ -138,7 +146,7 @@ public class BasicGunScript : MonoBehaviour
                 sphere.AddComponent<SphereCollider>();
                 sphere.GetComponent<SphereCollider>().radius = 0.1f;
                 sphere.AddComponent<Rigidbody>();
-                sphere.GetComponent<Rigidbody>().AddForce(this.gameObject.transform.forward * forceMultipleier, ForceMode.Force);
+                sphere.GetComponent<Rigidbody>().AddForce(this.gameObject.transform.forward * bulletForceMultipleier, ForceMode.Force);
                 sphere.AddComponent<BulletScript>();
             }
         }
@@ -167,7 +175,7 @@ public class BasicGunScript : MonoBehaviour
     {
         if (other.gameObject.tag == "Potion")
         {
-            goopShooterActive = true;
+            cubeFiringMode = true;
             other.transform.parent.GetComponent<PotionHand>().DestroyPotionObject();
         }
     }
