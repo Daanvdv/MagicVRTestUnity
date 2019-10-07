@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.magicvrtestunity.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "I:\\Projects2\\Daan170594\\Y3-1920\\BlockA\\MagicVRTestUnity\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "MagicVRTestUnity [Testing]"
+        }
+      }
+    }
+  ]
+}
