@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6152527193624729030
+--- !u!114 &4225398526500154230
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -46,41 +46,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handType: 2
   trigger:
-    actionPath: /actions/MagicVRTower/in/Trigger
+    actionPath: /actions/default/in/trigger
     needsReinit: 0
   menu:
-    actionPath: /actions/MagicVRTower/in/Menu
+    actionPath: /actions/default/in/menu
     needsReinit: 0
   grip:
-    actionPath: /actions/MagicVRTower/in/Grip
+    actionPath: /actions/default/in/grip
     needsReinit: 0
-  audioSource: {fileID: 0}
-  forceMultipleier: 0
---- !u!114 &8033571355482085077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8033571355343549161}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c7217fba9bfbca42a57eba38bb6b80d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  acceptableRange: 0
-  handType: 2
-  trigger:
-    actionPath: /actions/MagicVRTower/in/Trigger
-    needsReinit: 0
-  menu:
-    actionPath: /actions/MagicVRTower/in/Menu
-    needsReinit: 0
-  grip:
-    actionPath: /actions/MagicVRTower/in/Grip
-    needsReinit: 0
-  spawnParent: {fileID: 0}
---- !u!114 &1378151652091311553
+  fireSound: {fileID: 8300000, guid: 6e984feb46a04284e8c6ce4ebfd791d0, type: 3}
+  emptySound: {fileID: 8300000, guid: 8a95f5613a17c0f4db5b93318e947568, type: 3}
+  reloadSound: {fileID: 8300000, guid: ab9d0c5c3fa27b34685e9b70737e281a, type: 3}
+  reloadTime: 1.5
+  shotDelay: 0.15
+  maxAmmo: 15
+  bulletDespawntimer: 1.5
+  bulletForceMultipleier: 1000
+  debugMode: 1
+--- !u!114 &4514538388953274178
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,45 +72,59 @@ MonoBehaviour:
   m_GameObject: {fileID: 8033571355343648975}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5c0b459b7075204c99666852e59c364, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f94bd0962d62364192eee908039f445, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   handType: 1
-  trigger:
-    actionPath: /actions/MagicVRTower/in/Trigger
-    needsReinit: 0
-  menu:
-    actionPath: /actions/MagicVRTower/in/Menu
-    needsReinit: 0
   grip:
-    actionPath: /actions/MagicVRTower/in/Grip
+    actionPath: /actions/default/in/grip
     needsReinit: 0
-  audioSource: {fileID: 0}
-  forceMultipleier: 0
---- !u!114 &8033571356276824628
+  trigger:
+    actionPath: /actions/default/in/trigger
+    needsReinit: 0
+--- !u!114 &4265837158679529664
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8033571355343648975}
-  m_Enabled: 0
+  m_GameObject: {fileID: 8034271190038112357}
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c7217fba9bfbca42a57eba38bb6b80d, type: 3}
+  m_Script: {fileID: 11500000, guid: 6547d18b2bc62c94aa5ec1e87434da4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceptableRange: 0
-  handType: 1
-  trigger:
-    actionPath: /actions/MagicVRTower/in/Trigger
-    needsReinit: 0
-  menu:
-    actionPath: /actions/MagicVRTower/in/Menu
-    needsReinit: 0
-  grip:
-    actionPath: /actions/MagicVRTower/in/Grip
-    needsReinit: 0
-  spawnParent: {fileID: 0}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
+  debugMode: 0
+  boost: 3.5
+  positionLerpTime: 0.2
+  mouseSensitivityCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.5
+      inSlope: 0
+      outSlope: 5
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 2.5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  rotationLerpTime: 0.01
+  invertY: 0
 --- !u!1001 &6595890964205769847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -266,7 +263,7 @@ PrefabInstance:
     - target: {fileID: 114000010110554832, guid: 4d293c8e162f3874b982baadd71153d2,
         type: 3}
       propertyPath: poseAction.actionPath
-      value: /actions/MagicVRTower/in/Pose
+      value: /actions/default/in/Pose
       objectReference: {fileID: 0}
     - target: {fileID: 114000010110554832, guid: 4d293c8e162f3874b982baadd71153d2,
         type: 3}
@@ -286,7 +283,7 @@ PrefabInstance:
     - target: {fileID: 114000010876603736, guid: 4d293c8e162f3874b982baadd71153d2,
         type: 3}
       propertyPath: poseAction.actionPath
-      value: /actions/MagicVRTower/in/Pose
+      value: /actions/default/in/Pose
       objectReference: {fileID: 0}
     - target: {fileID: 114000010876603736, guid: 4d293c8e162f3874b982baadd71153d2,
         type: 3}
@@ -315,6 +312,12 @@ GameObject:
 --- !u!1 &8033571355343549161 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 159396, guid: 4d293c8e162f3874b982baadd71153d2,
+    type: 3}
+  m_PrefabInstance: {fileID: 8033571355343658061}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8034271190038112357 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000014254142504, guid: 4d293c8e162f3874b982baadd71153d2,
     type: 3}
   m_PrefabInstance: {fileID: 8033571355343658061}
   m_PrefabAsset: {fileID: 0}
