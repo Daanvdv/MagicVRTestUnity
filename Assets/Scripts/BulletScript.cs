@@ -10,6 +10,8 @@ public class BulletScript : MonoBehaviour
     public int samplerate = 44100;
     public float frequency = 440;
 
+    public float despawnTimer = 1.5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +20,7 @@ public class BulletScript : MonoBehaviour
         this.gameObject.GetComponent<AudioSource>().clip = hitSound;
 
 
-        timer = 1.2f;
+        timer = despawnTimer;
     }
 
     // Update is called once per frame

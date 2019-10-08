@@ -26,6 +26,9 @@ public class BasicGunScript : MonoBehaviour
     public int maxAmmo;
     private int currentAmmo;
 
+    //Bullet Settings
+    public float bulletDespawntimer;
+
     //Force
     public float bulletForceMultipleier;
 
@@ -54,6 +57,17 @@ public class BasicGunScript : MonoBehaviour
     /// Awake is called when the script instance is being loaded.
     void Awake()
     {
+        //Setup rigidbody
+        this.gameObject.AddComponent<Rigidbody>();
+        this.gameObject.GetComponent<Rigidbody>().useGravity = false;
+
+        //Setup sphere collider
+        this.gameObject.AddComponent<SphereCollider>();
+        this.gameObject.GetComponent<SphereCollider>().radius = 0.08f;
+        this.gameObject.GetComponent<SphereCollider>().isTrigger = true;
+
+        //Setup audio source
+        this.gameObject.AddComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -112,6 +126,7 @@ public class BasicGunScript : MonoBehaviour
                 sphere.AddComponent<Rigidbody>();
                 sphere.GetComponent<Rigidbody>().AddForce(this.gameObject.transform.forward * bulletForceMultipleier, ForceMode.Force);
                 sphere.AddComponent<BulletScript>();
+                sphere.GetComponent<BulletScript>().despawnTimer = bulletDespawntimer;
                 GetComponent<AudioSource>().PlayOneShot(fireSound);
                 currentAmmo--;
             }
@@ -124,6 +139,7 @@ public class BasicGunScript : MonoBehaviour
                 cube.AddComponent<Rigidbody>();
                 cube.GetComponent<Rigidbody>().AddForce(this.gameObject.transform.forward * bulletForceMultipleier, ForceMode.Force);
                 cube.AddComponent<BulletScript>();
+                cube.GetComponent<BulletScript>().despawnTimer = bulletDespawntimer;
                 GetComponent<AudioSource>().PlayOneShot(fireSound);
                 currentAmmo--;
             }
