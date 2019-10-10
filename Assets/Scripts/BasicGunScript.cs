@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
+using UnityEngine.Audio;
 
 public class BasicGunScript : MonoBehaviour
 {
@@ -15,6 +16,10 @@ public class BasicGunScript : MonoBehaviour
     public AudioClip fireSound;
     public AudioClip emptySound;
     public AudioClip reloadSound;
+    public AudioMixerGroup audioMixerGroup;
+    public AudioClip bulletCollisionSound;
+    public AudioClip bulletHitSound;
+    public AudioMixerGroup bulletAudioMixerGroup;
 
     //Timers
     public float reloadTime;
@@ -68,6 +73,7 @@ public class BasicGunScript : MonoBehaviour
 
         //Setup audio source
         this.gameObject.AddComponent<AudioSource>();
+        this.gameObject.GetComponent<AudioSource>().outputAudioMixerGroup = audioMixerGroup;
     }
 
     // Update is called once per frame
@@ -125,8 +131,11 @@ public class BasicGunScript : MonoBehaviour
                 sphere.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
                 sphere.AddComponent<Rigidbody>();
                 sphere.GetComponent<Rigidbody>().AddForce(this.gameObject.transform.forward * bulletForceMultipleier, ForceMode.Force);
-                sphere.AddComponent<BulletScript>();
-                sphere.GetComponent<BulletScript>().despawnTimer = bulletDespawntimer;
+                BulletScript bulletScript = sphere.AddComponent<BulletScript>();
+                bulletScript.despawnTimer = bulletDespawntimer;
+                bulletScript.audioMixerGroup = bulletAudioMixerGroup;
+                bulletScript.colliisonSound = bulletCollisionSound;
+                bulletScript.hitSound = bulletHitSound;
                 GetComponent<AudioSource>().PlayOneShot(fireSound);
                 currentAmmo--;
             }
@@ -138,8 +147,11 @@ public class BasicGunScript : MonoBehaviour
                 cube.GetComponent<MeshRenderer>().material.SetColor("_Color", new Color(0.0f, 0.5f, 1.0f));
                 cube.AddComponent<Rigidbody>();
                 cube.GetComponent<Rigidbody>().AddForce(this.gameObject.transform.forward * bulletForceMultipleier, ForceMode.Force);
-                cube.AddComponent<BulletScript>();
-                cube.GetComponent<BulletScript>().despawnTimer = bulletDespawntimer;
+                BulletScript bulletScript = cube.AddComponent<BulletScript>();
+                bulletScript.despawnTimer = bulletDespawntimer;
+                bulletScript.audioMixerGroup = bulletAudioMixerGroup;
+                bulletScript.colliisonSound = bulletCollisionSound;
+                bulletScript.hitSound = bulletHitSound;
                 GetComponent<AudioSource>().PlayOneShot(fireSound);
                 currentAmmo--;
             }
