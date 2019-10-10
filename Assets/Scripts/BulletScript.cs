@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class BulletScript : MonoBehaviour
 {
+    private bool hitWall;
     private float timer;
-    private AudioClip hitSound;
+    public AudioClip hitSound;
+    public AudioClip colliisonSound;
+    public AudioMixerGroup audioMixerGroup;
 
     public int samplerate = 44100;
     public float frequency = 440;
@@ -15,10 +19,18 @@ public class BulletScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.gameObject.AddComponent<AudioSource>();
-        hitSound = AudioClip.Create("BallonPop02", samplerate * 2, 1, samplerate, false);
-        this.gameObject.GetComponent<AudioSource>().clip = hitSound;
+        hitWall = false;
 
+        AudioSource audioSourceComponent = this.gameObject.AddComponent<AudioSource>();
+        audioSourceComponent.outputAudioMixerGroup = audioMixerGroup;
+        audioSourceComponent.clip = hitSound;
+        audioSourceComponent.playOnAwake = false;
+
+        audioSourceComponent.rolloffMode = AudioRolloffMode.Custom;
+        audioSourceComponent.maxDistance = float.MaxValue;
+
+        audioSourceComponent.reverbZoneMix = 0.0f;
+        audioSourceComponent.spatialBlend = 1.0f;
 
         timer = despawnTimer;
     }
@@ -27,7 +39,6 @@ public class BulletScript : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
-        HitSoundTest();
 
         if (timer < 0.0f)
         {
@@ -40,11 +51,10 @@ public class BulletScript : MonoBehaviour
     /// touching another rigidbody/collider.
     void OnCollisionEnter(Collision other)
     {
-        HitSoundTest();
-    }
-
-    void HitSoundTest()
-    {
-        GetComponent<AudioSource>().PlayOneShot(hitSound);
+        if (!hitWall)
+        {
+            hitWall = true;
+            GetComponent<AudioSource>().PlayOneShot(hitSound);
+        }
     }
 }
