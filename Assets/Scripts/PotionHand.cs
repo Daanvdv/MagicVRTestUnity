@@ -5,11 +5,15 @@ using Valve.VR;
 
 public class PotionHand : MonoBehaviour
 {
+    //SteamVR Input
     public SteamVR_Input_Sources handType;
     public SteamVR_Action_Boolean grip;
     public SteamVR_Action_Boolean trigger;
+
+    //Potion spawned
     private GameObject potionObject;
 
+    //If object is spawned, stops duplication
     private bool objectSpawned;
 
     // Start is called before the first frame update
@@ -38,12 +42,19 @@ public class PotionHand : MonoBehaviour
         sphere.transform.position = transform.position + new Vector3(0.0f, 0.0f, 0.0f);
         sphere.transform.parent = this.gameObject.transform;
         sphere.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-        sphere.AddComponent<Rigidbody>();
-        sphere.GetComponent<Rigidbody>().useGravity = false;
-        sphere.AddComponent<SphereCollider>();
-        sphere.GetComponent<SphereCollider>().radius = 0.1f;
-        sphere.GetComponent<SphereCollider>().isTrigger = true;
+
+        //Setup rigidbody
+        Rigidbody sphereRigidbody = sphere.AddComponent<Rigidbody>();
+        sphereRigidbody.useGravity = false;
+
+        //Setup collider
+        SphereCollider spheresCollider = sphere.AddComponent<SphereCollider>();
+        spheresCollider.radius = 0.1f;
+        spheresCollider.isTrigger = true;
+
         sphere.tag = "Potion";
+
+        //Set internal logic
         potionObject = sphere;
         objectSpawned = true;
     }

@@ -5,30 +5,36 @@ using UnityEngine.Audio;
 
 public class BulletScript : MonoBehaviour
 {
-    private bool hitWall;
-    private float timer;
+    //Audio
     public AudioClip hitSound;
     public AudioClip colliisonSound;
     public AudioMixerGroup audioMixerGroup;
 
-    public int samplerate = 44100;
-    public float frequency = 440;
-
+    //Bullet properties
     public float despawnTimer = 1.5f;
+
+    //For sound testing
+    private bool hitWall;
+    
+    //Internal timer
+    private float timer;
 
     // Start is called before the first frame update
     void Start()
     {
         hitWall = false;
 
+        //Basic audio source setup
         AudioSource audioSourceComponent = this.gameObject.AddComponent<AudioSource>();
         audioSourceComponent.outputAudioMixerGroup = audioMixerGroup;
         audioSourceComponent.clip = hitSound;
         audioSourceComponent.playOnAwake = false;
 
+        //Turning off attenuation
         audioSourceComponent.rolloffMode = AudioRolloffMode.Custom;
         audioSourceComponent.maxDistance = float.MaxValue;
 
+        //Setting reverb off and spatial blend to full 3D
         audioSourceComponent.reverbZoneMix = 0.0f;
         audioSourceComponent.spatialBlend = 1.0f;
 

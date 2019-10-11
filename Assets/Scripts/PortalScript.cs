@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class PortalScript : MonoBehaviour
 {
+    //Exit spcification
     public GameObject portalExit;
 
+    //Check for if the portal will cause errors
     private bool issuesDetected;
 
     // Start is called before the first frame update
@@ -30,6 +32,7 @@ public class PortalScript : MonoBehaviour
     {
         if (!issuesDetected)
         {
+            ///May cause issues when other is scaled diffrenlty
             Vector3 exitOffsetPosition = this.gameObject.transform.position - other.transform.position;
 
             other.transform.position = portalExit.transform.position + exitOffsetPosition;

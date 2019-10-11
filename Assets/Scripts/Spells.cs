@@ -5,18 +5,24 @@ using Valve.VR;
 
 public class Spells : MonoBehaviour
 {
+    //Gesture test variables
     private List<Vector2> gesturePoints;
     private List<Vector2> validGesturePoints;
     public float acceptableRange;
+
 	private SteamVR_TrackedObject trackedObject;
+    
+    //SteamVR input
     public SteamVR_Input_Sources handType;
     public SteamVR_Action_Boolean trigger;
     public SteamVR_Action_Boolean menu;
     public SteamVR_Action_Boolean grip;
 
+    //Parent gameobject spawner, allows for cleaner scene view during play
     public GameObject spawnParent;
     private List<GameObject> spawnedObjects;
 
+    //Internal checks
     private bool captureGesture;
     private float timer;
 

@@ -6,7 +6,7 @@ using UnityEngine.Audio;
 
 public class BasicGunScript : MonoBehaviour
 {
-    //VR Input
+    //SteamVR input
     public SteamVR_Input_Sources handType;
     public SteamVR_Action_Boolean trigger;
     public SteamVR_Action_Boolean menu;
@@ -126,16 +126,22 @@ public class BasicGunScript : MonoBehaviour
         {
             if (!cubeFiringMode)
             {
+                //Creating basic 'bullet'
                 GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
                 sphere.transform.position = transform.position;
                 sphere.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+
+                //Setup rigid body and add force
                 sphere.AddComponent<Rigidbody>();
                 sphere.GetComponent<Rigidbody>().AddForce(this.gameObject.transform.forward * bulletForceMultipleier, ForceMode.Force);
+
+                //Setup bullet script
                 BulletScript bulletScript = sphere.AddComponent<BulletScript>();
                 bulletScript.despawnTimer = bulletDespawntimer;
                 bulletScript.audioMixerGroup = bulletAudioMixerGroup;
                 bulletScript.colliisonSound = bulletCollisionSound;
                 bulletScript.hitSound = bulletHitSound;
+
                 GetComponent<AudioSource>().PlayOneShot(fireSound);
                 currentAmmo--;
             }
