@@ -38,6 +38,7 @@ public class PotionHand : MonoBehaviour
 
     void CreatePotionObject()
     {
+        //Basic bullet creation
         GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         sphere.transform.position = transform.position + new Vector3(0.0f, 0.0f, 0.0f);
         sphere.transform.parent = this.gameObject.transform;
