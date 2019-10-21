@@ -31,8 +31,10 @@ public class BulletScript : MonoBehaviour
         audioSourceComponent.playOnAwake = false;
 
         //Turning off attenuation
-        audioSourceComponent.rolloffMode = AudioRolloffMode.Custom;
-        audioSourceComponent.maxDistance = float.MaxValue;
+        audioSourceComponent.rolloffMode = AudioRolloffMode.Logarithmic;
+        audioSourceComponent.dopplerLevel = 1.0f;
+        audioSourceComponent.spread = 350.0f;
+        audioSourceComponent.maxDistance = 500.0f;
 
         //Setting reverb off and spatial blend to full 3D
         audioSourceComponent.reverbZoneMix = 0.0f;
