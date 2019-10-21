@@ -143,24 +143,29 @@ public class BasicGunScript : MonoBehaviour
                 bulletScript.hitSound = bulletHitSound;
 
                 GetComponent<AudioSource>().PlayOneShot(fireSound);
-                currentAmmo--;
             }
             else
             {
+                //Creating basic 'bullet'
                 GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
                 cube.transform.position = transform.position;
                 cube.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
                 cube.GetComponent<MeshRenderer>().material.SetColor("_Color", new Color(0.0f, 0.5f, 1.0f));
+
+                //Setup rigid body and add force
                 cube.AddComponent<Rigidbody>();
                 cube.GetComponent<Rigidbody>().AddForce(this.gameObject.transform.forward * bulletForceMultipleier, ForceMode.Force);
+
+                //Setup bullet script
                 BulletScript bulletScript = cube.AddComponent<BulletScript>();
                 bulletScript.despawnTimer = bulletDespawntimer;
                 bulletScript.audioMixerGroup = bulletAudioMixerGroup;
                 bulletScript.colliisonSound = bulletCollisionSound;
                 bulletScript.hitSound = bulletHitSound;
+                
                 GetComponent<AudioSource>().PlayOneShot(fireSound);
-                currentAmmo--;
             }
+            currentAmmo--;
         }
         else if (reloadTimer < 0.0f)
         {
