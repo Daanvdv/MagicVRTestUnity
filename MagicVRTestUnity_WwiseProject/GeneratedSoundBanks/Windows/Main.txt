@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3921814510	Bullet_Impact			\Default Work Unit\Bullet_Impact	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	129401382	Bullet_impact	I:\Projects2\Daan170594\Y3-1920\BlockA\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Windows\SFX\Bullet_Impact_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bullet_impact		79218
+
