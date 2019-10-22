@@ -12,6 +12,10 @@ public class BasicGunScript : MonoBehaviour
     public SteamVR_Action_Boolean menu;
     public SteamVR_Action_Boolean grip;
 
+    //Control Golem Prototype
+    public GameObject golem;
+    private GolemScript golemScript;
+
     //Audio
     public AudioClip fireSound;
     public AudioClip emptySound;
@@ -62,6 +66,10 @@ public class BasicGunScript : MonoBehaviour
     /// Awake is called when the script instance is being loaded.
     void Awake()
     {
+        //Setup golem
+        golem.transform.parent = this.gameObject.transform;
+        golemScript = golem.GetComponent<GolemScript>();
+
         //Setup rigidbody
         this.gameObject.AddComponent<Rigidbody>();
         this.gameObject.GetComponent<Rigidbody>().useGravity = false;
