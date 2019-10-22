@@ -61,3 +61,12 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# Visual Studio cache directory 
+.vcode/
+
+# Wwise local settings files
+*.wsettings
+*.validationcache
+
+# Wwise cache directory
+.cache/

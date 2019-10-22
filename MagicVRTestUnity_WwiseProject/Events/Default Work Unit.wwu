@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FC16AB3C-EEBC-4D0D-9BE9-84E9F8CAF880}" SchemaVersion="94">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{FC16AB3C-EEBC-4D0D-9BE9-84E9F8CAF880}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Bullet_Impact" ID="{F4DE7BB2-17C4-4F90-98F1-B2790C0F472B}">
+					<ChildrenList>
+						<Action Name="" ID="{F2E1842D-2BF8-454C-8E2A-E140EDC533BE}" ShortID="484125599">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bullet_impact" ID="{0E4DC7F9-FD6A-4126-A807-F5C2F3C3E476}" WorkUnitID="{1F666937-C6C3-4789-ACCA-1EE0D2536E11}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
