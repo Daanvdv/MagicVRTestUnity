@@ -68,5 +68,8 @@ crashlytics-build.properties
 *.wsettings
 *.validationcache
 
+# Visual Studio Code Local Settings
+.vcode/
+
 # Wwise cache directory
 .cache/
