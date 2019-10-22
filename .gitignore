@@ -70,3 +70,5 @@ crashlytics-build.properties
 
 # Wwise cache directory
 .cache/
+.vscode/launch.json
+.vscode/settings.json
