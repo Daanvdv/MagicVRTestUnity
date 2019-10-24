@@ -72,3 +72,7 @@ crashlytics-build.properties
 .cache/
 .vscode/launch.json
 .vscode/settings.json
+
+# Wwise files
+*.akd
+*.prof
