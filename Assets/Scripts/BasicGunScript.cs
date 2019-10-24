@@ -67,8 +67,8 @@ public class BasicGunScript : MonoBehaviour
     void Awake()
     {
         //Setup golem
-        golem.transform.parent = this.gameObject.transform;
-        golemScript = golem.GetComponent<GolemScript>();
+        //golem.transform.parent = this.gameObject.transform;
+        //golemScript = golem.GetComponent<GolemScript>();
 
         //Setup rigidbody
         this.gameObject.AddComponent<Rigidbody>();
