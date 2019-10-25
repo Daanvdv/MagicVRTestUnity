@@ -31,7 +31,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 0135562a6d66db468204f89f1dfaa340
     GuidInternal: 
-    m_lastTime: -8586298512432178254
+    m_lastTime: -8586296126629188517
     List:
     - name: Main
       guid: 3488a62f5a8c6c4fbff7a583671061f8
@@ -47,20 +47,44 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 3cab16fcbcee0d4d9be984e9f8caf880
     GuidInternal: 
-    m_lastTime: -8586298512439161127
+    m_lastTime: -8586296133011726594
     List:
-    - name: Bullet_Impact
-      guid: b27bdef4c417904f98f1b2790c0f472b
-      id: 3921814510
+    - name: Cow_Bell
+      guid: 9d92d410f897bd4dbdaa470b1f3e397a
+      id: 3353001066
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Bullet_Impact
+      - ElementName: Cow_Bell
         ObjectType: 3
-      Path: Default Work Unit\Bullet_Impact
+      Path: Default Work Unit\Cow_Bell
+      maxAttenuation: 0
+      maxDuration: 0.801088
+      minDuration: 0.801088
+    - name: Dwoop_Noise
+      guid: b27bdef4c417904f98f1b2790c0f472b
+      id: 1924894075
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Dwoop_Noise
+        ObjectType: 3
+      Path: Default Work Unit\Dwoop_Noise
       maxAttenuation: 0
       maxDuration: 0.897438
       minDuration: 0.897438
+    - name: Tang_Noise
+      guid: 1c1291a446ee7d4292f37ef1ba4299fc
+      id: 4242543710
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Tang_Noise
+        ObjectType: 3
+      Path: Default Work Unit\Tang_Noise
+      maxAttenuation: 0
+      maxDuration: 0.906463
+      minDuration: 0.906463
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
