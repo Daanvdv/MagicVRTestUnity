@@ -13,17 +13,13 @@ public class BasicGunScript : MonoBehaviour
     public SteamVR_Action_Boolean grip;
 
     //Control Golem Prototype
-    public GameObject golem;
-    private GolemScript golemScript;
+    //public GameObject golem;
+    //private GolemScript golemScript;
 
     //Audio
-    public AudioClip fireSound;
-    public AudioClip emptySound;
-    public AudioClip reloadSound;
-    public AudioMixerGroup audioMixerGroup;
-    public AudioClip bulletCollisionSound;
-    public AudioClip bulletHitSound;
-    public AudioMixerGroup bulletAudioMixerGroup;
+    public AK.Wwise.Event fireGunEvent;
+    public AK.Wwise.Event reloadGunEvent;
+    public AK.Wwise.Event emptyGunEvent;
 
     //Timers
     public float reloadTime;
@@ -78,10 +74,6 @@ public class BasicGunScript : MonoBehaviour
         this.gameObject.AddComponent<SphereCollider>();
         this.gameObject.GetComponent<SphereCollider>().radius = 0.08f;
         this.gameObject.GetComponent<SphereCollider>().isTrigger = true;
-
-        //Setup audio source
-        this.gameObject.AddComponent<AudioSource>();
-        this.gameObject.GetComponent<AudioSource>().outputAudioMixerGroup = audioMixerGroup;
     }
 
     // Update is called once per frame
@@ -146,11 +138,9 @@ public class BasicGunScript : MonoBehaviour
                 //Setup bullet script
                 BulletScript bulletScript = sphere.AddComponent<BulletScript>();
                 bulletScript.despawnTimer = bulletDespawntimer;
-                bulletScript.audioMixerGroup = bulletAudioMixerGroup;
-                bulletScript.colliisonSound = bulletCollisionSound;
-                bulletScript.hitSound = bulletHitSound;
 
-                GetComponent<AudioSource>().PlayOneShot(fireSound);
+                //Fire shot sound
+                fireGunEvent.Post(this.gameObject);
             }
             else
             {
@@ -167,17 +157,16 @@ public class BasicGunScript : MonoBehaviour
                 //Setup bullet script
                 BulletScript bulletScript = cube.AddComponent<BulletScript>();
                 bulletScript.despawnTimer = bulletDespawntimer;
-                bulletScript.audioMixerGroup = bulletAudioMixerGroup;
-                bulletScript.colliisonSound = bulletCollisionSound;
-                bulletScript.hitSound = bulletHitSound;
                 
-                GetComponent<AudioSource>().PlayOneShot(fireSound);
+                //Fire shot sound
+                fireGunEvent.Post(this.gameObject);
             }
             currentAmmo--;
         }
         else if (reloadTimer < 0.0f)
         {
-            GetComponent<AudioSource>().PlayOneShot(emptySound);
+            //Fire empty sound
+            emptyGunEvent.Post(this.gameObject);
         }
     }
 
@@ -199,10 +188,13 @@ public class BasicGunScript : MonoBehaviour
         }
         if (reloadTimer < 0.0f)
         {
-            GetComponent<AudioSource>().PlayOneShot(emptySound);
+            //Fire empty sound
+            fireGunEvent.Post(this.gameObject);
         }
         currentAmmo--;
-        GetComponent<AudioSource>().PlayOneShot(fireSound);
+
+        //Fire shoot sound
+        fireGunEvent.Post(this.gameObject);
     }
 
     void Reload()
@@ -210,12 +202,14 @@ public class BasicGunScript : MonoBehaviour
         if (!(currentAmmo == maxAmmo) && reloadTimer < 0.0f)
         {
             currentAmmo = maxAmmo;
-            GetComponent<AudioSource>().PlayOneShot(reloadSound);
+            
+            //Fire reload sound
+            reloadGunEvent.Post(this.gameObject);
+
             reloadTimer = reloadTime;
 
         }
     }
-
 
     /// OnTriggerEnter is called when the Collider other enters the trigger.
     void OnTriggerEnter(Collider other)

@@ -6,9 +6,6 @@ using UnityEngine.Audio;
 public class BulletScript : MonoBehaviour
 {
     //Audio
-    public AudioClip hitSound;
-    public AudioClip colliisonSound;
-    public AudioMixerGroup audioMixerGroup;
 
     //Bullet properties
     public float despawnTimer = 1.5f;
@@ -24,21 +21,7 @@ public class BulletScript : MonoBehaviour
     {
         hitWall = false;
 
-        //Basic audio source setup
-        AudioSource audioSourceComponent = this.gameObject.AddComponent<AudioSource>();
-        audioSourceComponent.outputAudioMixerGroup = audioMixerGroup;
-        audioSourceComponent.clip = hitSound;
-        audioSourceComponent.playOnAwake = false;
-
-        //Turning off attenuation
-        audioSourceComponent.rolloffMode = AudioRolloffMode.Logarithmic;
-        audioSourceComponent.dopplerLevel = 1.0f;
-        audioSourceComponent.spread = 350.0f;
-        audioSourceComponent.maxDistance = 500.0f;
-
-        //Setting reverb off and spatial blend to full 3D
-        audioSourceComponent.reverbZoneMix = 0.0f;
-        audioSourceComponent.spatialBlend = 1.0f;
+        //TODO: AUDIO SETUP
 
         timer = despawnTimer;
     }
@@ -50,7 +33,7 @@ public class BulletScript : MonoBehaviour
 
         if (timer < 0.0f)
         {
-            this.gameObject.GetComponent<AudioSource>().PlayOneShot(hitSound, 1.0f);
+            //TODO: DESTRUCTION SOUND
             Destroy(this.gameObject);
         }
     }
@@ -62,7 +45,7 @@ public class BulletScript : MonoBehaviour
         if (!hitWall)
         {
             hitWall = true;
-            GetComponent<AudioSource>().PlayOneShot(hitSound);
+            //TODO: FIRE COLLISION SOUND
         }
     }
 }
