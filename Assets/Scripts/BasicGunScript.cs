@@ -66,10 +66,6 @@ public class BasicGunScript : MonoBehaviour
         //golem.transform.parent = this.gameObject.transform;
         //golemScript = golem.GetComponent<GolemScript>();
 
-        //Setup rigidbody
-        this.gameObject.AddComponent<Rigidbody>();
-        this.gameObject.GetComponent<Rigidbody>().useGravity = false;
-
         //Setup sphere collider
         this.gameObject.AddComponent<SphereCollider>();
         this.gameObject.GetComponent<SphereCollider>().radius = 0.08f;
