@@ -24,14 +24,14 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 6105dbea901a1f4ca7fb49d8dc98d556
     GuidInternal: 
-    m_lastTime: -8586296111230237044
+    m_lastTime: -8586295940014747900
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 0135562a6d66db468204f89f1dfaa340
     GuidInternal: 
-    m_lastTime: -8586296126629188517
+    m_lastTime: -8586295936719242033
     List:
     - name: Main
       guid: 3488a62f5a8c6c4fbff7a583671061f8
@@ -47,8 +47,20 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 3cab16fcbcee0d4d9be984e9f8caf880
     GuidInternal: 
-    m_lastTime: -8586296133011726594
+    m_lastTime: -8586295939507580090
     List:
+    - name: Ambience
+      guid: ed3a154cb5c98e4e86b047340e240584
+      id: 85412153
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 3
+      Path: Default Work Unit\Ambience
+      maxAttenuation: 0
+      maxDuration: 263.47733
+      minDuration: 263.47733
     - name: Cow_Bell
       guid: 9d92d410f897bd4dbdaa470b1f3e397a
       id: 3353001066

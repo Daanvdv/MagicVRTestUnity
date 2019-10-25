@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID COW_BELL = 3353001066U;
         static const AkUniqueID DWOOP_NOISE = 1924894075U;
         static const AkUniqueID TANG_NOISE = 4242543710U;
@@ -26,6 +27,7 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID _3D_AUDIO_BUS = 1768088848U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
     } // namespace BUSSES
 

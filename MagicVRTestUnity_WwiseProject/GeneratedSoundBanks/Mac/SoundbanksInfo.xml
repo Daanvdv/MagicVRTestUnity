@@ -21,6 +21,7 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="85412153" Name="Ambience" ObjectPath="\Events\Default Work Unit\Ambience" DurationType="OneShot" DurationMin="263.477325" DurationMax="263.477325"/>
 				<Event Id="3353001066" Name="Cow_Bell" ObjectPath="\Events\Default Work Unit\Cow_Bell" DurationType="OneShot" DurationMin="0.801088" DurationMax="0.801088"/>
 				<Event Id="1924894075" Name="Dwoop_Noise" ObjectPath="\Events\Default Work Unit\Dwoop_Noise" DurationType="OneShot" DurationMin="0.897438" DurationMax="0.897438"/>
 				<Event Id="4242543710" Name="Tang_Noise" ObjectPath="\Events\Default Work Unit\Tang_Noise" DurationType="OneShot" DurationMin="0.906463" DurationMax="0.906463"/>
@@ -33,6 +34,10 @@
 				<File Id="588773314" Language="SFX">
 					<ShortName>Dwoop_Noise.wav</ShortName>
 					<Path>SFX\Dwoop_Noise_10C4C929.wem</Path>
+				</File>
+				<File Id="856541539" Language="SFX">
+					<ShortName>General_Ambience.wav</ShortName>
+					<Path>SFX\General_Ambience_10C4C929.wem</Path>
 				</File>
 				<File Id="888011689" Language="SFX">
 					<ShortName>Tang_Noise.wav</ShortName>
