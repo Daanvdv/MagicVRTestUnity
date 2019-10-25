@@ -3,7 +3,7 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{1F666937-C6C3-4789-ACCA-1EE0D2536E11}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="Bullet_impact" ID="{0E4DC7F9-FD6A-4126-A807-F5C2F3C3E476}" ShortID="719819104">
+				<Sound Name="Dwoop_Noise" ID="{0E4DC7F9-FD6A-4126-A807-F5C2F3C3E476}" ShortID="719819104">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{49D27962-CBDB-4968-A4CC-C80ADAD56DAD}"/>
@@ -13,13 +13,51 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="Bullet_Impact" ID="{CAD57DD0-ACE4-43B6-9DA0-2B7428427B72}" ShortID="129401382">
+						<AudioFileSource Name="Dwoop_Noise" ID="{8FDCFA46-5681-4DD2-8D92-3834FD0D6240}" ShortID="588773314">
 							<Language>SFX</Language>
-							<AudioFile>Bullet_Impact.wav</AudioFile>
+							<AudioFile>Dwoop_Noise.wav</AudioFile>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="Bullet_Impact" ID="{CAD57DD0-ACE4-43B6-9DA0-2B7428427B72}" Platform="Linked"/>
+						<ActiveSource Name="Dwoop_Noise" ID="{8FDCFA46-5681-4DD2-8D92-3834FD0D6240}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Cow_Bell" ID="{D2819032-1044-4B06-B8C2-57878A37C863}" ShortID="799051406">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{49D27962-CBDB-4968-A4CC-C80ADAD56DAD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EADB0561-1A90-4C1F-A7FB-49D8DC98D556}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Cow_Bell" ID="{75C21078-18E3-4ED6-9754-95B050DF5E54}" ShortID="220066827">
+							<Language>SFX</Language>
+							<AudioFile>Cow_Bell.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Cow_Bell" ID="{75C21078-18E3-4ED6-9754-95B050DF5E54}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Tang_Noise" ID="{0054BDE6-07D9-4560-82B3-5294624A8C4F}" ShortID="819900704">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{49D27962-CBDB-4968-A4CC-C80ADAD56DAD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EADB0561-1A90-4C1F-A7FB-49D8DC98D556}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Tang_Noise" ID="{9F3319CA-110D-44E9-A7D2-3ED179383E60}" ShortID="888011689">
+							<Language>SFX</Language>
+							<AudioFile>Tang_Noise.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Tang_Noise" ID="{9F3319CA-110D-44E9-A7D2-3ED179383E60}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

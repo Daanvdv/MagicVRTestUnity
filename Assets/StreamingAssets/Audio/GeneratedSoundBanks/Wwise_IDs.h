@@ -13,7 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID BULLET_IMPACT = 3921814510U;
+        static const AkUniqueID COW_BELL = 3353001066U;
+        static const AkUniqueID DWOOP_NOISE = 1924894075U;
+        static const AkUniqueID TANG_NOISE = 4242543710U;
     } // namespace EVENTS
 
     namespace BANKS

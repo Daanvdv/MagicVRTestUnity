@@ -3,12 +3,34 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{FC16AB3C-EEBC-4D0D-9BE9-84E9F8CAF880}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Bullet_Impact" ID="{F4DE7BB2-17C4-4F90-98F1-B2790C0F472B}">
+				<Event Name="Dwoop_Noise" ID="{F4DE7BB2-17C4-4F90-98F1-B2790C0F472B}">
 					<ChildrenList>
 						<Action Name="" ID="{F2E1842D-2BF8-454C-8E2A-E140EDC533BE}" ShortID="484125599">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Bullet_impact" ID="{0E4DC7F9-FD6A-4126-A807-F5C2F3C3E476}" WorkUnitID="{1F666937-C6C3-4789-ACCA-1EE0D2536E11}"/>
+									<ObjectRef Name="Dwoop_Noise" ID="{0E4DC7F9-FD6A-4126-A807-F5C2F3C3E476}" WorkUnitID="{1F666937-C6C3-4789-ACCA-1EE0D2536E11}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Tang_Noise" ID="{A491121C-EE46-427D-92F3-7EF1BA4299FC}">
+					<ChildrenList>
+						<Action Name="" ID="{BA9D68C3-E4D8-4239-AC9E-14FCDCB7D211}" ShortID="1025056953">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tang_Noise" ID="{0054BDE6-07D9-4560-82B3-5294624A8C4F}" WorkUnitID="{1F666937-C6C3-4789-ACCA-1EE0D2536E11}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Cow_Bell" ID="{10D4929D-97F8-4DBD-BDAA-470B1F3E397A}">
+					<ChildrenList>
+						<Action Name="" ID="{1AD195EA-8EED-4132-A45B-1A4530BB933F}" ShortID="902307388">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cow_Bell" ID="{D2819032-1044-4B06-B8C2-57878A37C863}" WorkUnitID="{1F666937-C6C3-4789-ACCA-1EE0D2536E11}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

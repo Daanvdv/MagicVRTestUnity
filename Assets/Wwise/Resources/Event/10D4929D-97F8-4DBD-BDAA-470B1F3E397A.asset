@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 085ef6a8717528e4d95d17a96967bea6, type: 3}
-  m_Name: F4DE7BB2-17C4-4F90-98F1-B2790C0F472B
+  m_Name: 10D4929D-97F8-4DBD-BDAA-470B1F3E397A
   m_EditorClassIdentifier: 
-  objectName: Dwoop_Noise
-  id: 1924894075
-  guid: F4DE7BB2-17C4-4F90-98F1-B2790C0F472B
+  objectName: Cow_Bell
+  id: 3353001066
+  guid: 10D4929D-97F8-4DBD-BDAA-470B1F3E397A

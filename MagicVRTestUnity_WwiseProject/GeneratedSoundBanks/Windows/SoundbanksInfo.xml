@@ -21,12 +21,22 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3921814510" Name="Bullet_Impact" ObjectPath="\Events\Default Work Unit\Bullet_Impact" DurationType="OneShot" DurationMin="0.897438" DurationMax="0.897438"/>
+				<Event Id="3353001066" Name="Cow_Bell" ObjectPath="\Events\Default Work Unit\Cow_Bell" DurationType="OneShot" DurationMin="0.801088" DurationMax="0.801088"/>
+				<Event Id="1924894075" Name="Dwoop_Noise" ObjectPath="\Events\Default Work Unit\Dwoop_Noise" DurationType="OneShot" DurationMin="0.897438" DurationMax="0.897438"/>
+				<Event Id="4242543710" Name="Tang_Noise" ObjectPath="\Events\Default Work Unit\Tang_Noise" DurationType="OneShot" DurationMin="0.906463" DurationMax="0.906463"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="129401382" Language="SFX">
-					<ShortName>Bullet_Impact.wav</ShortName>
-					<Path>SFX\Bullet_Impact_10C4C929.wem</Path>
+				<File Id="220066827" Language="SFX">
+					<ShortName>Cow_Bell.wav</ShortName>
+					<Path>SFX\Cow_Bell_10C4C929.wem</Path>
+				</File>
+				<File Id="588773314" Language="SFX">
+					<ShortName>Dwoop_Noise.wav</ShortName>
+					<Path>SFX\Dwoop_Noise_10C4C929.wem</Path>
+				</File>
+				<File Id="888011689" Language="SFX">
+					<ShortName>Tang_Noise.wav</ShortName>
+					<Path>SFX\Tang_Noise_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

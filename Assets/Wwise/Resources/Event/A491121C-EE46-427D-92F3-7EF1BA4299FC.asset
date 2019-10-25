@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 085ef6a8717528e4d95d17a96967bea6, type: 3}
-  m_Name: F4DE7BB2-17C4-4F90-98F1-B2790C0F472B
+  m_Name: A491121C-EE46-427D-92F3-7EF1BA4299FC
   m_EditorClassIdentifier: 
-  objectName: Dwoop_Noise
-  id: 1924894075
-  guid: F4DE7BB2-17C4-4F90-98F1-B2790C0F472B
+  objectName: Tang_Noise
+  id: 4242543710
+  guid: A491121C-EE46-427D-92F3-7EF1BA4299FC

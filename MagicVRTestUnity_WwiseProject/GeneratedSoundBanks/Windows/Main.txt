@@ -1,6 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
-	3921814510	Bullet_Impact			\Default Work Unit\Bullet_Impact	
+	1924894075	Dwoop_Noise			\Default Work Unit\Dwoop_Noise	
+	3353001066	Cow_Bell			\Default Work Unit\Cow_Bell	
+	4242543710	Tang_Noise			\Default Work Unit\Tang_Noise	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	129401382	Bullet_impact	I:\Projects2\Daan170594\Y3-1920\BlockA\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Windows\SFX\Bullet_Impact_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bullet_impact		79218
+	220066827	Cow_Bell	I:\Projects2\Daan170594\Y3-1920\BlockA\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Windows\SFX\Cow_Bell_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cow_Bell		70720
+	588773314	Dwoop_Noise	I:\Projects2\Daan170594\Y3-1920\BlockA\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Windows\SFX\Dwoop_Noise_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dwoop_Noise		79218
+	888011689	Tang_Noise	I:\Projects2\Daan170594\Y3-1920\BlockA\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Windows\SFX\Tang_Noise_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tang_Noise		80014
 
