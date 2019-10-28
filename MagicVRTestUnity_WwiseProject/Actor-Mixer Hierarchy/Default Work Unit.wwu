@@ -115,6 +115,7 @@
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="LoopCount" Type="int32" Value="8"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AttachableMixerInput">
