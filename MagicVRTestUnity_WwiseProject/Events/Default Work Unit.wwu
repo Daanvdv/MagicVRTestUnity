@@ -47,6 +47,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Machine_Noise_Loop" ID="{F8C5D48F-E8CD-43EA-8286-894BF380ABF9}">
+					<ChildrenList>
+						<Action Name="" ID="{88F07EAC-01DA-4F30-A145-613E879B87F0}" ShortID="610751473">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Engine_Noise" ID="{A7C90309-16D0-4652-8D0F-34156C7755B4}" WorkUnitID="{1F666937-C6C3-4789-ACCA-1EE0D2536E11}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

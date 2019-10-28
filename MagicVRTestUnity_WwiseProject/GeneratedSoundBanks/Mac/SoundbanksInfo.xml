@@ -24,12 +24,17 @@
 				<Event Id="85412153" Name="Ambience" ObjectPath="\Events\Default Work Unit\Ambience" DurationType="OneShot" DurationMin="263.477325" DurationMax="263.477325"/>
 				<Event Id="3353001066" Name="Cow_Bell" ObjectPath="\Events\Default Work Unit\Cow_Bell" DurationType="OneShot" DurationMin="0.801088" DurationMax="0.801088"/>
 				<Event Id="1924894075" Name="Dwoop_Noise" ObjectPath="\Events\Default Work Unit\Dwoop_Noise" DurationType="OneShot" DurationMin="0.897438" DurationMax="0.897438"/>
+				<Event Id="21451884" Name="Machine_Noise_Loop" ObjectPath="\Events\Default Work Unit\Machine_Noise_Loop" DurationType="Infinite"/>
 				<Event Id="4242543710" Name="Tang_Noise" ObjectPath="\Events\Default Work Unit\Tang_Noise" DurationType="OneShot" DurationMin="0.906463" DurationMax="0.906463"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="220066827" Language="SFX">
 					<ShortName>Cow_Bell.wav</ShortName>
 					<Path>SFX\Cow_Bell_10C4C929.wem</Path>
+				</File>
+				<File Id="221681289" Language="SFX">
+					<ShortName>Engine_Loop.wav</ShortName>
+					<Path>SFX\Engine_Loop_D79FB2B7.wem</Path>
 				</File>
 				<File Id="588773314" Language="SFX">
 					<ShortName>Dwoop_Noise.wav</ShortName>

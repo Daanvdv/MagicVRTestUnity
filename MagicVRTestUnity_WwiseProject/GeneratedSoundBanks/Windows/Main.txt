@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	21451884	Machine_Noise_Loop			\Default Work Unit\Machine_Noise_Loop	
 	85412153	Ambience			\Default Work Unit\Ambience	
 	1924894075	Dwoop_Noise			\Default Work Unit\Dwoop_Noise	
 	3353001066	Cow_Bell			\Default Work Unit\Cow_Bell	
@@ -6,6 +7,7 @@ Event	ID	Name			Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	220066827	Cow_Bell	I:\Projects2\Daan170594\Y3-1920\BlockA\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Windows\SFX\Cow_Bell_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cow_Bell		70720
+	221681289	Engine_Noise	I:\Projects2\Daan170594\Y3-1920\BlockA\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Windows\SFX\Engine_Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Engine_Noise		473404
 	588773314	Dwoop_Noise	I:\Projects2\Daan170594\Y3-1920\BlockA\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Windows\SFX\Dwoop_Noise_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dwoop_Noise		79218
 	856541539	Ambience	I:\Projects2\Daan170594\Y3-1920\BlockA\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Windows\SFX\General_Ambience_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience		25293888
 	888011689	Tang_Noise	I:\Projects2\Daan170594\Y3-1920\BlockA\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Windows\SFX\Tang_Noise_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tang_Noise		80014

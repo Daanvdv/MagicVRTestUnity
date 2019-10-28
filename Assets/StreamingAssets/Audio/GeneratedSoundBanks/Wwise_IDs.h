@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID COW_BELL = 3353001066U;
         static const AkUniqueID DWOOP_NOISE = 1924894075U;
+        static const AkUniqueID MACHINE_NOISE_LOOP = 21451884U;
         static const AkUniqueID TANG_NOISE = 4242543710U;
     } // namespace EVENTS
 
