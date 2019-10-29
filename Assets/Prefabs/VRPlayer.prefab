@@ -247,20 +247,6 @@ MonoBehaviour:
   trigger:
     actionPath: /actions/default/in/trigger
     needsReinit: 0
---- !u!114 &2476809002014528897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8034271190038112357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 776e7b88f21339c4f8fa0a6348d4274f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDefaultListener: 1
-  listenerId: 0
 --- !u!114 &3519259421699028368
 MonoBehaviour:
   m_ObjectHideFlags: 0
