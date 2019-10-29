@@ -7,12 +7,18 @@ public class MovingCubeScirpt : MonoBehaviour
     public float moveSpeed = 1.0f;
     public List<Vector3> positions;
 
-    public int posNumber = 1;
-    public float internalTimer;
-    public int previousPos = 0;
-    public bool goToStart;
+    private int posNumber = 1;
+    private float internalTimer;
+    private int previousPos = 0;
+    private bool goToStart;
 
-    /// Awake is called when the script instance is being loaded.
+    void Awake()
+    {
+        /*for(int i = 0; i > positions.Count; i++)
+        {
+            positions[i] += this.gameObject.transform.position;
+        }*/
+    }
 
     // Start is called before the first frame update
     void Start()
