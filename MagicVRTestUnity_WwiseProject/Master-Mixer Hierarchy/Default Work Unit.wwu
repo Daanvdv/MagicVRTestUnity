@@ -18,6 +18,40 @@
 									</Custom>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<AuxBus Name="LargeRoom" ID="{5F89B656-BFEE-4A9A-BE5A-D28329FB061F}">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="AttachableMixerInput">
+											<Custom>
+												<Effect Name="Oculus Spatializer (Attached)" ID="{47EA3455-56CF-4AF5-8115-362CDD99C951}" ShortID="625800443" PluginName="AttachableMixerInput" CompanyID="266" PluginID="501" PluginType="3"/>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Robotic_Trash" ID="{18FEB1E8-36C5-4B2D-959A-8F3CE9ECBB0E}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+								<AuxBus Name="SmallRoom" ID="{E05F7646-8B7E-48FB-8DB0-3595E6EAE2EF}">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="AttachableMixerInput">
+											<Custom>
+												<Effect Name="Oculus Spatializer (Attached)" ID="{A3D423CC-1677-4AB5-9DA6-CF7C9070FB9E}" ShortID="966549353" PluginName="AttachableMixerInput" CompanyID="266" PluginID="501" PluginType="3"/>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Inside_Your_Head" ID="{AE2D0AE1-8963-400A-AA4A-52A7A6397F89}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+							</ChildrenList>
 						</Bus>
 					</ChildrenList>
 				</Bus>
