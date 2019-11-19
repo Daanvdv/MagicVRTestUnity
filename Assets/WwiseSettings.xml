@@ -8,6 +8,6 @@
   <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
   <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
   <WwiseInstallationPathMac />
-  <WwiseInstallationPathWindows>C:\Program Files (x86)\Audiokinetic\Wwise 2019.1.4.7065</WwiseInstallationPathWindows>
-  <WwiseProjectPath>../MagicVRTestUnity_WwiseProject/MagicVRTestUnity_WwiseProject.wproj</WwiseProjectPath>
+  <WwiseInstallationPathWindows>D:\Program Files (x86)\Audiokinetic\Wwise 2019.1.5.7093</WwiseInstallationPathWindows>
+  <WwiseProjectPath>../../MagicVRTestUnity/MagicVRTestUnity_WwiseProject/MagicVRTestUnity_WwiseProject.wproj</WwiseProjectPath>
 </WwiseSettings>
