@@ -2,8 +2,14 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	1768088848	3D Audio Bus			\Default Work Unit\Master Audio Bus\3D Audio Bus	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	187046019	LargeRoom			\Default Work Unit\Master Audio Bus\3D Audio Bus\LargeRoom	
+	2933838247	SmallRoom			\Default Work Unit\Master Audio Bus\3D Audio Bus\SmallRoom	
+
 Effect plug-ins	ID	Name	Type				Notes
 	853125933	Oculus Spatializer (Custom)	Oculus Spatializer			
+	2900412812	Robotic_Trash	Wwise RoomVerb			
+	3036946058	Inside_Your_Head	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

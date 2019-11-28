@@ -6,9 +6,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	4242543710	Tang_Noise			\Default Work Unit\Tang_Noise	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	220066827	Cow_Bell	I:\Projects2\Daan170594\Y3-1920\BlockA\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Windows\SFX\Cow_Bell_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cow_Bell		70720
-	221681289	Engine_Noise	I:\Projects2\Daan170594\Y3-1920\BlockA\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Windows\SFX\Engine_Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Engine_Noise		473404
-	588773314	Dwoop_Noise	I:\Projects2\Daan170594\Y3-1920\BlockA\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Windows\SFX\Dwoop_Noise_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dwoop_Noise		79218
-	856541539	Ambience	I:\Projects2\Daan170594\Y3-1920\BlockA\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Windows\SFX\General_Ambience_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience		25293888
-	888011689	Tang_Noise	I:\Projects2\Daan170594\Y3-1920\BlockA\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Windows\SFX\Tang_Noise_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tang_Noise		80014
+	220066827	Cow_Bell	D:\Projects\Unity\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Windows\SFX\Cow_Bell_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cow_Bell		70720
+	221681289	Engine_Noise	D:\Projects\Unity\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Windows\SFX\Engine_Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Engine_Noise		473404
+	588773314	Dwoop_Noise	D:\Projects\Unity\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Windows\SFX\Dwoop_Noise_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dwoop_Noise		79218
+	856541539	Ambience	D:\Projects\Unity\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Windows\SFX\General_Ambience_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience		25293888
+	888011689	Tang_Noise	D:\Projects\Unity\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Windows\SFX\Tang_Noise_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tang_Noise		80014
 

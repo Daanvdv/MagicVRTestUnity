@@ -163,6 +163,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8586274329464889975
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /MagicVRTestUnity_WwiseProject
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
