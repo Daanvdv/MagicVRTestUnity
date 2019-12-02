@@ -15,7 +15,7 @@ public class DelaySoundScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timeToPlaySound = Random.Range(0.2f, 15.0f);
+        timeToPlaySound = Random.Range(minRange, maxRange);
     }
 
     // Update is called once per frame
