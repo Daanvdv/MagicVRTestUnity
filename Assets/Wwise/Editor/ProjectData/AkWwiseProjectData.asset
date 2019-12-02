@@ -165,5 +165,11 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /MagicVRTestUnity_WwiseProject
+  - /MagicVRTestUnity_WwiseProject/Auxiliary Busses
+  - /MagicVRTestUnity_WwiseProject/Auxiliary Busses/Default Work Unit
+  - /MagicVRTestUnity_WwiseProject/Events
+  - /MagicVRTestUnity_WwiseProject/Events/Default Work Unit
+  - /MagicVRTestUnity_WwiseProject/SoundBanks
+  - /MagicVRTestUnity_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
