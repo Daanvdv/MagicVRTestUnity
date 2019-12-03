@@ -167,6 +167,10 @@ MonoBehaviour:
   - /MagicVRTestUnity_WwiseProject
   - /MagicVRTestUnity_WwiseProject/Auxiliary Busses
   - /MagicVRTestUnity_WwiseProject/Auxiliary Busses/Default Work Unit
+  - /MagicVRTestUnity_WwiseProject/Auxiliary Busses/Default Work Unit/Master Audio
+    Bus
+  - /MagicVRTestUnity_WwiseProject/Auxiliary Busses/Default Work Unit/Master Audio
+    Bus/3D Audio Bus
   - /MagicVRTestUnity_WwiseProject/Events
   - /MagicVRTestUnity_WwiseProject/Events/Default Work Unit
   - /MagicVRTestUnity_WwiseProject/SoundBanks
