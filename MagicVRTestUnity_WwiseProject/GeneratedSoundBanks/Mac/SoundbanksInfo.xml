@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>D:\Projects\Unity\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Projects\Unity\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Projects\Unity\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>I:\Projects2\Daan170594\Y3-1920\BlockA\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>I:\Projects2\Daan170594\Y3-1920\BlockA\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>I:\Projects2\Daan170594\Y3-1920\BlockA\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Projects\Unity\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>I:\Projects2\Daan170594\Y3-1920\BlockA\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
