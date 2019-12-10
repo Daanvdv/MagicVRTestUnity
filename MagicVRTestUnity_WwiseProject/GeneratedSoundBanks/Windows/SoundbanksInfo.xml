@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>D:\Projects\Unity\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Projects\Unity\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Projects\Unity\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>I:\Projects2\Daan170594\Y3-1920\BlockA\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>I:\Projects2\Daan170594\Y3-1920\BlockA\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>I:\Projects2\Daan170594\Y3-1920\BlockA\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Projects\Unity\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>I:\Projects2\Daan170594\Y3-1920\BlockA\MagicVRTestUnity\MagicVRTestUnity_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
